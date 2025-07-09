@@ -1,6 +1,8 @@
+
 body {
-    background-color: #e9ecef; /* Light gray background */
+    background-color: #282c34; /* Dark background */
     font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #e0e0e0; /* Light text color */
 }
 
 .container {
@@ -8,57 +10,67 @@ body {
 }
 
 .card {
-    border-radius: 15px; /* Rounded corners for the card */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    overflow: hidden; /* Ensures rounded corners apply to children */
+    background-color: #3a404d; /* Slightly lighter dark for card */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    overflow: hidden;
+    border: 1px solid #4f5b66; /* Subtle border */
 }
 
 .card-body {
-    padding: 2.5rem; /* More padding */
+    padding: 2.5rem;
 }
 
 .card-title {
-    color: #343a40; /* Darker text for title */
+    color: #61dafb; /* Accent color for title (e.g., React blue) */
     font-weight: 600;
-    margin-bottom: 2rem; /* More space below title */
+    margin-bottom: 2rem;
 }
 
 #todo-form .form-control {
-    border-radius: 8px; /* Rounded input field */
-    border-color: #ced4da;
+    background-color: #4f5b66; /* Darker input background */
+    border-radius: 8px;
+    border-color: #61dafb; /* Accent border */
+    color: #e0e0e0; /* Light text in input */
     padding: 0.75rem 1rem;
 }
 
+#todo-form .form-control::placeholder {
+    color: #a0a8b3; /* Lighter placeholder text */
+}
+
 #todo-form .form-control:focus {
-    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* Custom focus glow */
-    border-color: #80bdff;
+    box-shadow: 0 0 0 0.25rem rgba(97, 218, 251, 0.25); /* Accent focus glow */
+    border-color: #61dafb;
 }
 
 #todo-form .btn-primary {
-    background-color: #007bff; /* Bootstrap primary blue */
-    border-color: #007bff;
-    border-radius: 8px; /* Rounded button */
+    background-color: #61dafb; /* Accent color for button */
+    border-color: #61dafb;
+    border-radius: 8px;
     padding: 0.75rem 1.5rem;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
+    color: #282c34; /* Dark text on accent button */
 }
 
 #todo-form .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
-    transform: translateY(-2px); /* Slight lift on hover */
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    background-color: #21a1f1;
+    border-color: #21a1f1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(97, 218, 251, 0.2);
 }
 
 #todo-list .list-group-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem; /* More padding for list items */
-    border: none; /* Remove default borders */
-    border-bottom: 1px solid #eee; /* Subtle separator */
-    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-bottom: 1px solid #4f5b66; /* Darker separator */
+    background-color: #3a404d; /* Same as card background */
     transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    color: #e0e0e0;
 }
 
 #todo-list .list-group-item:first-child {
@@ -69,12 +81,12 @@ body {
 #todo-list .list-group-item:last-child {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    border-bottom: none; /* No border on the last item */
+    border-bottom: none;
 }
 
 #todo-list .list-group-item:hover {
-    background-color: #f8f9fa;
-    transform: translateX(5px); /* Slight slide on hover */
+    background-color: #4f5b66; /* Slightly lighter on hover */
+    transform: translateX(5px);
 }
 
 .todo-task {
@@ -82,20 +94,20 @@ body {
     flex-grow: 1;
     margin-right: 1rem;
     font-size: 1.1rem;
-    color: #495057;
+    color: #e0e0e0;
 }
 
 .todo-task.done {
     text-decoration: line-through;
-    color: #6c757d; /* Muted color for done tasks */
+    color: #a0a8b3; /* Muted color for done tasks */
     font-style: italic;
 }
 
 .delete-btn {
     background: none;
     border: none;
-    color: #dc3545; /* Bootstrap danger red */
-    font-size: 1.5rem; /* Larger icon */
+    color: #ff6b6b; /* Red accent for delete */
+    font-size: 1.5rem;
     line-height: 1;
     padding: 0.2rem 0.5rem;
     border-radius: 5px;
@@ -103,13 +115,13 @@ body {
 }
 
 .delete-btn:hover {
-    color: #c82333;
-    background-color: #f8d7da; /* Light red background on hover */
-    transform: scale(1.1); /* Slight enlarge on hover */
+    color: #e04848;
+    background-color: #4f5b66; /* Darker background on hover */
+    transform: scale(1.1);
 }
 
 .list-group-item.text-center.text-muted {
     padding: 1.5rem;
     font-style: italic;
-    color: #6c757d !important;
+    color: #a0a8b3 !important;
 }
