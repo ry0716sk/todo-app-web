@@ -1,8 +1,7 @@
-
 body {
-    background-color: #282c34; /* Dark background */
-    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    color: #e0e0e0; /* Light text color */
+    background-color: #f0f2f5; /* Very light gray background for a clean look */
+    font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Modern font */
+    color: #333; /* Dark text for high readability */
 }
 
 .container {
@@ -10,104 +9,104 @@ body {
 }
 
 .card {
-    background-color: #3a404d; /* Slightly lighter dark for card */
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    background-color: #ffffff; /* Pure white card background */
+    border-radius: 12px; /* Slightly less rounded for modern feel */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Softer, more diffused shadow */
     overflow: hidden;
-    border: 1px solid #4f5b66; /* Subtle border */
+    border: none; /* No border for a cleaner look */
 }
 
 .card-body {
-    padding: 2.5rem;
+    padding: 2.5rem; /* Generous padding */
 }
 
 .card-title {
-    color: #61dafb; /* Accent color for title (e.g., React blue) */
-    font-weight: 600;
+    color: #2c3e50; /* Deep blue-gray for title */
+    font-weight: 700; /* Bolder title */
     margin-bottom: 2rem;
+    font-size: 2rem; /* Slightly larger title */
 }
 
 #todo-form .form-control {
-    background-color: #4f5b66; /* Darker input background */
     border-radius: 8px;
-    border-color: #61dafb; /* Accent border */
-    color: #e0e0e0; /* Light text in input */
-    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0; /* Soft border */
+    color: #333;
+    padding: 0.85rem 1.2rem; /* More vertical padding */
+    font-size: 1rem;
 }
 
 #todo-form .form-control::placeholder {
-    color: #a0a8b3; /* Lighter placeholder text */
+    color: #a0a0a0; /* Muted placeholder */
 }
 
 #todo-form .form-control:focus {
-    box-shadow: 0 0 0 0.25rem rgba(97, 218, 251, 0.25); /* Accent focus glow */
-    border-color: #61dafb;
+    box-shadow: 0 0 0 0.2rem rgba(95, 158, 160, 0.25); /* Soft teal focus glow */
+    border-color: #5f9ea0; /* Soft teal border */
 }
 
 #todo-form .btn-primary {
-    background-color: #61dafb; /* Accent color for button */
-    border-color: #61dafb;
+    background-color: #5f9ea0; /* Soft teal primary button */
+    border-color: #5f9ea0;
     border-radius: 8px;
-    padding: 0.75rem 1.5rem;
-    font-weight: 500;
+    padding: 0.85rem 1.8rem;
+    font-weight: 600;
     transition: all 0.2s ease-in-out;
-    color: #282c34; /* Dark text on accent button */
+    font-size: 1rem;
 }
 
 #todo-form .btn-primary:hover {
-    background-color: #21a1f1;
-    border-color: #21a1f1;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(97, 218, 251, 0.2);
+    background-color: #4a8c8e;
+    border-color: #4a8c8e;
+    transform: translateY(-1px); /* Subtle lift */
+    box-shadow: 0 4px 10px rgba(95, 158, 160, 0.2);
 }
 
 #todo-list .list-group-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 1.5rem; /* More padding for list items */
     border: none;
-    border-bottom: 1px solid #4f5b66; /* Darker separator */
-    background-color: #3a404d; /* Same as card background */
-    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
-    color: #e0e0e0;
+    border-bottom: 1px solid #f0f0f0; /* Very subtle separator */
+    background-color: #ffffff;
+    transition: background-color 0.2s ease-in-out;
+    color: #444;
+    font-size: 1.05rem;
 }
 
 #todo-list .list-group-item:first-child {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 #todo-list .list-group-item:last-child {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     border-bottom: none;
 }
 
 #todo-list .list-group-item:hover {
-    background-color: #4f5b66; /* Slightly lighter on hover */
-    transform: translateX(5px);
+    background-color: #f8f8f8; /* Very subtle hover effect */
 }
 
 .todo-task {
     cursor: pointer;
     flex-grow: 1;
     margin-right: 1rem;
-    font-size: 1.1rem;
-    color: #e0e0e0;
+    color: #444;
 }
 
 .todo-task.done {
     text-decoration: line-through;
-    color: #a0a8b3; /* Muted color for done tasks */
+    color: #999; /* Muted gray for done tasks */
     font-style: italic;
 }
 
 .delete-btn {
     background: none;
     border: none;
-    color: #ff6b6b; /* Red accent for delete */
-    font-size: 1.5rem;
+    color: #e74c3c; /* Soft red for delete */
+    font-size: 1.6rem; /* Slightly larger icon */
     line-height: 1;
     padding: 0.2rem 0.5rem;
     border-radius: 5px;
@@ -115,13 +114,13 @@ body {
 }
 
 .delete-btn:hover {
-    color: #e04848;
-    background-color: #4f5b66; /* Darker background on hover */
+    color: #c0392b;
+    background-color: #ffe0e0; /* Light red background on hover */
     transform: scale(1.1);
 }
 
 .list-group-item.text-center.text-muted {
     padding: 1.5rem;
     font-style: italic;
-    color: #a0a8b3 !important;
+    color: #a0a0a0 !important;
 }
