@@ -11,11 +11,6 @@ const TODO_FILE = path.join(__dirname, 'todos.json');
 app.use(express.json());
 app.use(express.static('public'));
 
-// Explicitly serve index.html for the root path
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
 // Helper function to read todos
 const readTodos = (callback) => {
     fs.readFile(TODO_FILE, 'utf8', (err, data) => {
