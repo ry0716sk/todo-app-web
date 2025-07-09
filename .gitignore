@@ -1,0 +1,9 @@
+
+# Dependencies
+/node_modules
+
+# Data
+/todos.json
+
+# OS-specific
+.DS_Store
