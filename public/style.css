@@ -1,0 +1,46 @@
+
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.card-title {
+    color: #333;
+}
+
+#todo-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#todo-list .list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+.todo-task {
+    cursor: pointer;
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+
+.todo-task.done {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.delete-btn {
+    border: none;
+    background: none;
+    color: #dc3545;
+    font-size: 1.2rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+    color: #a71d2a;
+}
